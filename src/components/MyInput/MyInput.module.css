@@ -12,6 +12,9 @@
     height: 40px;
     width: 240px;
     background-color: aqua;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .enterButton {
