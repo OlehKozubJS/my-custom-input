@@ -1,3 +1,5 @@
+import { MyInput } from './MyInput/MyInput.jsx';
+
 export const App = () => {
   return (
     <div
