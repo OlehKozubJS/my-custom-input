@@ -1,4 +1,5 @@
 import { Component } from "react";
+import css from './MyInput.module.css';
 
 export class MyInput extends Component {
     render() {
