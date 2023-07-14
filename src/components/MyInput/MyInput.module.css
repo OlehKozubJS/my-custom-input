@@ -18,4 +18,10 @@
     display: block;
     height: 40px;
     width: 40px;
+    background-color: aquamarine;
+    border: none;
+}
+
+.enterButton:hover {
+   background-color: lightgreen;
 }
