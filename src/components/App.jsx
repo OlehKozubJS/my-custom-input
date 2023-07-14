@@ -13,6 +13,7 @@ export const App = () => {
       }}
     >
       React homework template
+      <MyInput />
     </div>
   );
 };
