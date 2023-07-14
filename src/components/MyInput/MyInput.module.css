@@ -1,5 +1,7 @@
 .inputContainer {
-
+    height: 50px;
+    width: 300px;
+    background-color: lightcyan;
 }
 
 .inputContent {
