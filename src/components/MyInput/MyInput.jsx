@@ -4,9 +4,9 @@ import css from './MyInput.module.css';
 export class MyInput extends Component {
     render() {
         return (
-            <div>
-                <div></div>
-                <button>Enter</button>
+            <div className={css.inputContainer}>
+                <div className={css.inputContent}></div>
+                <button className={css.enterButton}>Enter</button>
             </div>
         )
     }
