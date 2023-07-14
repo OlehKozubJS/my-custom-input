@@ -5,7 +5,7 @@ export class MyInput extends Component {
         return (
             <div>
                 <div></div>
-                <button></button>
+                <button>Enter</button>
             </div>
         )
     }
