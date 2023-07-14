@@ -2,13 +2,20 @@
     height: 50px;
     width: 300px;
     background-color: lightcyan;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .inputContent {
     height: 40px;
-    width: 
+    width: 240px;
+    background-color: aqua;
 }
 
 .enterButton {
     display: block;
+    height: 40px;
+    width: 40px;
 }
