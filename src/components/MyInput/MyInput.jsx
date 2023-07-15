@@ -3,6 +3,8 @@ import css from './MyInput.module.css';
 
 export class MyInput extends Component {
     render() {
+        const { children } = this.props;
+
         return (
             <div className={css.inputContainer}>
                 <div className={css.inputContent}></div>
