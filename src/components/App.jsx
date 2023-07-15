@@ -12,7 +12,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <MyInput />
+      <MyInput>Hello</MyInput>
     </div>
   );
 };
