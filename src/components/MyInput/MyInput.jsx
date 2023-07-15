@@ -7,7 +7,7 @@ export class MyInput extends Component {
 
         return (
             <div className={css.inputContainer}>
-                <div className={css.inputContent}></div>
+                <div className={css.inputContent}>{children}</div>
                 <button className={css.enterButton}>E</button>
             </div>
         )
