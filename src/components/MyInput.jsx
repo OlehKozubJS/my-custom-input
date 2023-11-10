@@ -1,13 +1,13 @@
 const { Component } = require('react');
-const { css, enterButton, inputContainer, inputContent } = require('./css');
+const css = require('./css/MyInput.module.css');
 
 class MyInput extends Component {
   render() {
     const { children } = this.props;
 
     return (
-      <div className={inputContainer}>
-        <div className={inputContent}>{children}</div>
+      <div className={css.inputContainer}>
+        <div className={css.inputContent}>{children}</div>
         <button className={css.enterButton}>E</button>
       </div>
     );
