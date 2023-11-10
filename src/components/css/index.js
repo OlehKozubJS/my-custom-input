@@ -1,7 +1,13 @@
 const css = require('./MyInput.module.css');
 
-module.exports = {
+export { css };
+
+/*
+
+export {
   inputContainer: css.inputContainer,
   inputContent: css.inputContent,
   enterButton: css.enterButton,
 };
+
+*/
