@@ -1,5 +1,5 @@
 const { Component } = require('react');
-const { enterButton, inputContainer, inputContent } = require('./css');
+const { css, enterButton, inputContainer, inputContent } = require('./css');
 
 class MyInput extends Component {
   render() {
@@ -8,7 +8,7 @@ class MyInput extends Component {
     return (
       <div className={inputContainer}>
         <div className={inputContent}>{children}</div>
-        <button className={enterButton}>E</button>
+        <button className={css.enterButton}>E</button>
       </div>
     );
   }
