@@ -1,4 +1,4 @@
-import { MyInput } from './MyInput/MyInput.jsx';
+import { MyInput } from './MyInput.jsx';
 
 export const App = () => {
   return (
@@ -9,7 +9,7 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
       <MyInput>Hello</MyInput>
