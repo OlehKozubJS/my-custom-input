@@ -8,4 +8,4 @@ const App = () => {
   );
 };
 
-module.exports = { App };
+export { App };
