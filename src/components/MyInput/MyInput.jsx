@@ -1,5 +1,5 @@
-import { Component } from 'react';
-import {} from './MyInput.module.css';
+const {Component} = require("react");
+const {} = require("./MyInput.module.css");
 
 export class MyInput extends Component {
   render() {
