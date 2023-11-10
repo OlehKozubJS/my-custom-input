@@ -1,17 +1,8 @@
-import { MyInput } from './MyInput.jsx';
+const {} = require('./MyInput');
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <div>
       <MyInput>Hello</MyInput>
     </div>
   );
