@@ -1,7 +1,7 @@
 const { Component } = require('react');
 const { enterButton, inputContainer, inputContent } = require('./css');
 
-export class MyInput extends Component {
+class MyInput extends Component {
   render() {
     const { children } = this.props;
 
@@ -13,3 +13,5 @@ export class MyInput extends Component {
     );
   }
 }
+
+module.exports = { MyInput };
