@@ -1,4 +1,4 @@
-const {} = require('./MyInput');
+const { MyInput } = require('./MyInput');
 
 export const App = () => {
   return (
