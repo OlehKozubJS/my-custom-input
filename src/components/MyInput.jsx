@@ -14,4 +14,4 @@ class MyInput extends Component {
   }
 }
 
-module.exports = { MyInput };
+export { MyInput };
