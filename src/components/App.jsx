@@ -1,9 +1,11 @@
 const { MyInput } = require('./MyInput');
 
-export const App = () => {
+const App = () => {
   return (
     <div>
       <MyInput>Hello</MyInput>
     </div>
   );
 };
+
+module.exports = { App };
