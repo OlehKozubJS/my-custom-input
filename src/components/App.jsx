@@ -5,13 +5,13 @@ const App = () => {
   const [text, setText] = useState('');
 
   const handleSubmit = text => {
-    setTextString(text);
+    setText(text);
   };
 
   return (
     <div>
       <MyInput onSubmit={handleSubmit}>Hello</MyInput>
-      <div>{textString}</div>
+      <div>{text}</div>
     </div>
   );
 };
