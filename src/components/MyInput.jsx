@@ -1,14 +1,14 @@
 const { Component } = require('react');
-import {} from "./css";
+import { inputContainer, inputContent, enterButton } from './css';
 
 class MyInput extends Component {
   render() {
     const { children } = this.props;
 
     return (
-      <div className={}>
-        <div className={}>{children}</div>
-        <button className={}>E</button>
+      <div className={inputContainer}>
+        <div className={inputContent}>{children}</div>
+        <button className={enterButton}>E</button>
       </div>
     );
   }
