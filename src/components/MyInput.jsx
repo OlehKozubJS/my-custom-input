@@ -1,5 +1,5 @@
 import { inputContainer, inputContent, enterButton } from './css';
-import { useState /*, useCallback*/ } from 'react';
+import { useState } from 'react';
 
 const MyInput = ({ children, onSubmit }) => {
   const [textString, setTextString] = useState('');
