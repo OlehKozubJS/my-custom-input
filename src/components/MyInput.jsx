@@ -6,12 +6,12 @@ const MyInput = ({ children, onSubmit }) => {
 
   const handleChange = event => {
     setTextString(event.target.value);
-    console.log(textString);
   };
 
   const handleSubmit = event => {
     event.preventDefault();
     onSubmit(textString);
+    console.log(textString);
     event.currentTarget.reset();
   };
 
