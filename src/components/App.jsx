@@ -1,9 +1,17 @@
 import { MyInput } from './MyInput';
+import { useState /*, useCallback*/ } from 'react';
 
 const App = () => {
+  const [textString, setTextString] = useState('');
+
+  const handleSubmit = text => {
+    setTextString(text);
+  };
+
   return (
     <div>
-      <MyInput>Hello</MyInput>
+      <MyInput onSubmit={handleSubmit}>Hello</MyInput>
+      <div>{textString}</div>
     </div>
   );
 };
