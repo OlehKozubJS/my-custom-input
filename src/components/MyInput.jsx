@@ -13,9 +13,9 @@ const MyInput = ({ children, onSubmit }) => {
 
   return (
     <form className={inputContainer}>
-      <input className={inputContent} name="inputContent">
-        {children}
-      </input>
+      {<input className={inputContent} name="inputContent" /> || (
+        <div>children</div>
+      )}
       <button type="submit" onSubmit={handleSubmit} className={enterButton}>
         E
       </button>
