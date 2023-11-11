@@ -1,12 +1,13 @@
 import { inputContainer, inputContent, enterButton } from './css';
 import { useState /*, useCallback*/ } from 'react';
 
-const MyInput = ({ children }) => {
+const MyInput = ({ children, onSubmit }) => {
   const [textString, setTextString] = useState('');
 
   const handleSubmit = event => {
     event.preventDefault();
     setTextString(event.currentTarget.elements.inputContent.value);
+    onSubmit(textString);
     event.currentTarget.reset();
   };
 
