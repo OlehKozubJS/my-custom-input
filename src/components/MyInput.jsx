@@ -23,7 +23,7 @@ const MyInput = ({ children, onSubmit }) => {
           value={textString}
           onChange={handleChange}
         />
-      ) || <div className={inputContent}>children</div>}
+      ) || <div className={inputContent}>{children}</div>}
       <button type="submit" onSubmit={handleSubmit} className={enterButton}>
         E
       </button>
