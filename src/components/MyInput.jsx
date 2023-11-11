@@ -1,4 +1,4 @@
-const { Component } = require('react');
+import { Component } from 'react';
 import { inputContainer, inputContent, enterButton } from './css';
 
 class MyInput extends Component {
