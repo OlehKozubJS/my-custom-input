@@ -1,5 +1,5 @@
 import { MyInput } from './MyInput';
-import { useState /*, useCallback*/ } from 'react';
+import { useState } from 'react';
 
 const App = () => {
   const [textString, setTextString] = useState('');
