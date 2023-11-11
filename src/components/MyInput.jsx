@@ -10,7 +10,6 @@ const MyInput = ({ children, onSubmit }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    const { inputContent } = event.currentTarget.elements;
     onSubmit(textString);
     event.currentTarget.reset();
   };
