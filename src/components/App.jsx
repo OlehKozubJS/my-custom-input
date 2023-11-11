@@ -1,4 +1,4 @@
-const { MyInput } = require('./MyInput');
+import { MyInput } from './MyInput';
 
 const App = () => {
   return (
