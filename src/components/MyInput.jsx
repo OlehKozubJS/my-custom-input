@@ -2,13 +2,21 @@ import { inputContainer, inputContent, enterButton } from './css';
 import { useState /*, useCallback*/ } from 'react';
 
 const MyInput = ({ children }) => {
-  сonst[(textString, setTextString)] = useState();
+  сonst[(textString, setTextString)] = useState('');
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    event.currentTarget.reset();
+  };
 
   return (
-    <div className={inputContainer}>
+    <form className={inputContainer}>
       <input className={inputContent}>{children}</input>
-      <button className={enterButton}>E</button>
-    </div>
+      <button type="submit" onSubmit={handleSubmit} className={enterButton}>
+        E
+      </button>
+    </form>
   );
 };
 
