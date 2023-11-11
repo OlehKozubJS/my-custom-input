@@ -16,14 +16,16 @@ const MyInput = ({ children, onSubmit }) => {
 
   return (
     <form className={inputContainer}>
-      {(
+      {textString ? (
         <input
           className={inputContent}
           name="inputContent"
           value={textString}
           onChange={handleChange}
         />
-      ) || <div className={inputContent}>{children}</div>}
+      ) : (
+        <div className={inputContent}>{children}</div>
+      )}
       <button type="submit" onSubmit={handleSubmit} className={enterButton}>
         E
       </button>
