@@ -14,7 +14,7 @@ const MyInput = ({ children, onSubmit }) => {
   return (
     <form className={inputContainer}>
       {<input className={inputContent} name="inputContent" /> || (
-        <div>children</div>
+        <div className={inputContent}>children</div>
       )}
       <button type="submit" onSubmit={handleSubmit} className={enterButton}>
         E
