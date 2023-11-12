@@ -1,7 +1,7 @@
 import { inputContainer, inputContent, enterButton } from './css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const DivInput = ({ children, onSubmit }) => {
+const DivInput = ({ children, onChange }) => {
   const [text, setText] = useState('');
   const [isActive, setIsActive] = useState(false);
 
