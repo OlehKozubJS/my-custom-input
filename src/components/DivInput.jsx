@@ -5,5 +5,14 @@ const DivInput = ({ children, onChange }) => {
   const [text, setText] = useState('');
   const [isActive, setIsActive] = useState(false);
 
-  return <div>{text || children}</div>;
+  const toggleIsActive = () => {
+    if (isActive) {
+      setIsActive(false);
+    } else {
+      setIsActive(true);
+    }
+  };
+  //useEffect();
+
+  return <div onClick={toggleIsActive}>{text || children}</div>;
 };
