@@ -12,6 +12,7 @@ const DivInput = ({ children, onChange }) => {
       setIsActive(true);
     }
   };
+
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.type !== 'keydown') return;
