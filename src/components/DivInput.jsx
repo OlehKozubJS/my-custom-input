@@ -12,7 +12,7 @@ const DivInput = ({ children, onChange }) => {
       setIsActive(true);
     }
   };
-  //useEffect();
+  useEffect(() => {}, [onChange]);
 
   return <div onClick={toggleIsActive}>{text || children}</div>;
 };
