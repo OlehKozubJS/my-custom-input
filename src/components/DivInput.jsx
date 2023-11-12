@@ -26,5 +26,9 @@ const DivInput = ({ children, onChange }) => {
     }
   }, [onChange, toggleIsActive]);
 
-  return <div onClick={toggleIsActive}>{text || children}</div>;
+  return (
+    <div onClick={toggleIsActive} className={inputContent}>
+      {text || children}
+    </div>
+  );
 };
