@@ -20,8 +20,10 @@ const DivInput = ({ children, onChange }) => {
 
     if (isActive) {
       window.addEventListener('keydown', handleKeyDown);
+    } else {
+      window.removeEventListener('keydown', handleKeyDown);
     }
-  }, [onChange]);
+  }, [onChange, toggleIsActive]);
 
   return <div onClick={toggleIsActive}>{text || children}</div>;
 };
