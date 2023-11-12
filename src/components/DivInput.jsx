@@ -28,7 +28,7 @@ const DivInput = ({ children, onChange }) => {
       window.removeEventListener('keydown', handleKeyDown);
     }
     */
-  }, [onChange, toggleIsActive]);
+  }, []);
 
   return (
     <div onClick={toggleIsActive} className={inputContent}>
