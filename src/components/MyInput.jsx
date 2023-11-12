@@ -6,18 +6,18 @@ const MyInput = ({ children, onSubmit }) => {
 
   const handleChange = event => {
     setTextString(event.target.value);
-    console.log(textString);
   };
 
   const handleSubmit = event => {
     event.preventDefault();
+    const form = event.currentTarget;
+    setTextString('');
     onSubmit(textString);
-    console.log(textString);
-    event.currentTarget.reset();
+    form.reset();
   };
 
   return (
-    <form className={inputContainer}>
+    <form className={inputContainer} onSubmit={handleSubmit}>
       <input
         className={inputContent}
         name="inputContent"
@@ -26,7 +26,7 @@ const MyInput = ({ children, onSubmit }) => {
         placeholder={children}
       />
 
-      <button type="submit" onSubmit={handleSubmit} className={enterButton}>
+      <button type="submit" className={enterButton}>
         E
       </button>
     </form>
