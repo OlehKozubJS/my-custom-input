@@ -12,7 +12,16 @@ const DivInput = ({ children, onChange }) => {
       setIsActive(true);
     }
   };
-  useEffect(() => {}, [onChange]);
+  useEffect(() => {
+    const handleKeyDown = event => {
+      if (event.type !== 'keydown') return;
+      setText(text + event.key);
+    };
+
+    if (isActive) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+  }, [onChange]);
 
   return <div onClick={toggleIsActive}>{text || children}</div>;
 };
