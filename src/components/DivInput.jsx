@@ -32,3 +32,5 @@ const DivInput = ({ children, onChange }) => {
     </div>
   );
 };
+
+export { DivInput };
