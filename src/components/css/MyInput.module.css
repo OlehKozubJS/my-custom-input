@@ -11,6 +11,7 @@
 .inputContent {
   height: 40px;
   width: 240px;
+  border: none;
   outline: none;
   background-color: aqua;
   display: flex;
