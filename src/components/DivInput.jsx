@@ -19,11 +19,15 @@ const DivInput = ({ children, onChange }) => {
       setText(text + event.key);
     };
 
+    window.addEventListener('keydown', handleKeyDown);
+
+    /*
     if (isActive) {
       window.addEventListener('keydown', handleKeyDown);
     } else {
       window.removeEventListener('keydown', handleKeyDown);
     }
+    */
   }, [onChange, toggleIsActive]);
 
   return (
