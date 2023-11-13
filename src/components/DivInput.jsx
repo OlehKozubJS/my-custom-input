@@ -1,4 +1,4 @@
-import { inputContainer, inputContent, enterButton } from './css';
+import { /*inputContainer, */ inputContent /*, enterButton*/ } from './css';
 import { useState, useEffect } from 'react';
 
 const DivInput = ({ children, onChange }) => {
