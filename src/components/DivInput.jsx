@@ -1,7 +1,21 @@
 import { /*inputContainer, */ inputContent /*, enterButton*/ } from './css';
 import { useState, useEffect } from 'react';
 
-const keyExceptions = [];
+const keyExceptions = [
+  'Tab',
+  'CapsLock',
+  'Shift',
+  'Enter',
+  'Control',
+  'Alt',
+  'ContextMenu',
+  'Meta',
+  'NumLock',
+  'ArrowUp',
+  'ArrowDown',
+  'ArrowLeft',
+  'ArrowRight',
+];
 
 const DivInput = ({ children, onChange }) => {
   const [text, setText] = useState('');
@@ -17,7 +31,7 @@ const DivInput = ({ children, onChange }) => {
 
   useEffect(() => {
     const handleKeyDown = event => {
-      if (event.type !== 'keydown') return;
+      if (event.type !== 'keydown' || keyExceptions.includes(event.key)) return;
       if (event.key === 'Backspace') {
         const shorterText = text.slice(0, text.length - 1);
         setText(shorterText);
