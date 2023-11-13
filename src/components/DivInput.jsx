@@ -26,13 +26,6 @@ const DivInput = ({ children, onChange }) => {
 
     window.addEventListener('keydown', handleKeyDown);
 
-    /*
-    if (isActive) {
-      window.addEventListener('keydown', handleKeyDown);
-    } else {
-      window.removeEventListener('keydown', handleKeyDown);
-    }
-    */
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
