@@ -1,7 +1,7 @@
 import { /*inputContainer, */ inputContent /*, enterButton*/ } from './css';
 import { useState, useEffect } from 'react';
 
-const keyExceptions = 
+const keyExceptions = [];
 
 const DivInput = ({ children, onChange }) => {
   const [text, setText] = useState('');
