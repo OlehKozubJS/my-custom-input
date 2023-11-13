@@ -13,7 +13,7 @@ const App = () => {
     <div>
       <MyInput onSubmit={handleSubmit}>Hello</MyInput>
       <div>{text}</div>
-      <DivInput></DivInput>
+      <DivInput>Enter something</DivInput>
     </div>
   );
 };
