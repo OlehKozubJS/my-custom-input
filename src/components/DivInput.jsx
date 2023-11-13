@@ -16,6 +16,9 @@ const DivInput = ({ children, onChange }) => {
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.type !== 'keydown') return;
+      if (event.key === 'Backspace') {
+        const shorterText = text.slice(0, text.length - 1);
+      }
       setText(text + event.key);
     };
 
