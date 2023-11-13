@@ -19,6 +19,7 @@ const DivInput = ({ children, onChange }) => {
       if (event.key === 'Backspace') {
         const shorterText = text.slice(0, text.length - 1);
         setText(shorterText);
+        return;
       }
       setText(text + event.key);
     };
