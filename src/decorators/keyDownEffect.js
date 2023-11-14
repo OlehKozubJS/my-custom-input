@@ -20,3 +20,5 @@ const keyDownEffect = () => {
     window.removeEventListener('keydown', handleKeyDown);
   };
 };
+
+export { keyDownEffect };
