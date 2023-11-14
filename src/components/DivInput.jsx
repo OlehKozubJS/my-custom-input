@@ -19,6 +19,7 @@ const keyExceptions = [
 
 const DivInput = ({ children, onChange }) => {
   const [text, setText] = useState('');
+  const [isUpperCase, setIsUpperCase] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
   const toggleIsActive = () => {
@@ -37,7 +38,12 @@ const DivInput = ({ children, onChange }) => {
         setText(shorterText);
         return;
       }
-      setText(text + event.key);
+      if (event.key === 'Shift') {
+        setIsUpperCase(true);
+      }
+      const character = isUpperCase ? event.key.toUpperCase() : event.key;
+      setText(text + character);
+      setIsUpperCase(false);
     };
 
     window.addEventListener('keydown', handleKeyDown);
