@@ -1,17 +1,7 @@
-const keyDownEffect = () => {
+const keyDownEffect = onKeyDown => {
   const handleKeyDown = event => {
-    if (event.type !== 'keydown' || keyExceptions.includes(event.key)) return;
-    if (event.key === 'Backspace') {
-      const shorterText = text.slice(0, text.length - 1);
-      setText(shorterText);
-      return;
-    }
-    if (event.key === 'Shift') {
-      setIsUpperCase(true);
-    }
-    const character = isUpperCase ? event.key.toUpperCase() : event.key;
-    setText(text + character);
-    setIsUpperCase(false);
+    if (event.type !== 'keydown') return;
+    onKeyDown();
   };
 
   window.addEventListener('keydown', handleKeyDown);
