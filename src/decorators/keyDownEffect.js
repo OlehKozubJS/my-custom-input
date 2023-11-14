@@ -1,7 +1,7 @@
 const keyDownEffect = (onKeyDown, dependencies) => {
   useEffect(() => {
     const handleKeyDown = event => {
-      if (event.type !== 'keydown' || keyExceptions.includes(event.key)) return;
+      if (event.type !== 'keydown') return;
       onKeyDown();
     };
 
