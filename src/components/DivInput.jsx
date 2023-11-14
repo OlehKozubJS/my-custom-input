@@ -51,7 +51,7 @@ const DivInput = ({ children, onChange }) => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [text, setText]);
+  }, [text, setText, isUpperCase]);
 
   return (
     <div onClick={toggleIsActive} className={inputContent}>
