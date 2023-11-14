@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 const keyDownEffect = (onKeyDown, dependencies) => {
   useEffect(() => {
     const handleKeyDown = event => {
