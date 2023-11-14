@@ -1,6 +1,5 @@
 import { /*inputContainer, */ inputContent /*, enterButton*/ } from './css';
 import { useState, useEffect } from 'react';
-import { keyDownEffect } from '../decorators';
 
 const keyExceptions = [
   'Tab',
